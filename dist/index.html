@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+  <title>JS - slider</title>
+</head>
+
+<body>
+
+<header class="header">
+  <h1 class="header__logo logo">JS - slider</h1>
+</header>
+
+<main class="main">
+  <div class="container">
+    <div class="slider"> 
+      <div class="slider__view">
+        <input type="range" id="fader" class="slider__fader">
+      </div>
+      <div class="slider__config">
+
+        <div class="slider__config-row">
+          <label for="min">min</label>
+          <input type="text" name="min" class="slider__config-input">
+    
+          <label for="max">max</label>
+          <input type="text" name="max" class="slider__config-input">
+    
+          <label for="">step</label>
+          <input type="text" class="slider__config-input">
+    
+          <label for="">from</label>
+          <input type="text" class="slider__config-input">
+    
+          <label for="">to</label>
+          <input type="text" class="slider__config-input">
+        </div>
+
+        <div class="slider__config-row">
+          <label class="slider__config-switch slider__config-label"> vertical
+            <input type="checkbox" class="slider__config-switch-input">
+          </label>
+
+          <label class="slider__config-switch slider__config-label"> range
+            <input type="checkbox" class="slider__config-switch-input">
+          </label>
+
+          <label class="slider__config-switch slider__config-label"> scale
+            <input type="checkbox" class="slider__config-switch-input">
+          </label>
+
+          <label class="slider__config-switch slider__config-label"> bar
+            <input type="checkbox" class="slider__config-switch-input">
+          </label>
+
+          <label class="slider__config-switch slider__config-label"> tip
+            <input type="checkbox" class="slider__config-switch-input">
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"></footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/bundle.js"></script>
+</body>
+</html>
