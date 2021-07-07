@@ -7,6 +7,6 @@ let sliderPipe: any = document.querySelector('.slider__pipe');
 
 range.onchange = function () {
   
-  sliderPipe.style.left = this.value - 10 + 2 + 'px';
+  sliderPipe.style.left = this.value * 0.185 + '%';
   sliderPipe.innerHTML = this.value;
 }
