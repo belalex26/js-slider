@@ -8,8 +8,9 @@
     background: #ffffff;
     border-radius: 8px;
     width: 700px;
-    height: 18px;
+    height: 50px;
     margin-bottom: 50px;
+    margin: 45px 4% 0 4%;
 }
 
 .slider__fader {
@@ -30,7 +31,16 @@
     border-radius: 50%;
     background: #4eb7a8;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
+.slider__pipe {
+    position: absolute;
+    border: 1px solid #000000;
+    left: 7px;
+    top: -30px;
+    width: 30px;
+    height: 20px;
+    /*display: none;*/
 }
 
 .slider__config {

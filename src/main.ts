@@ -1,11 +1,12 @@
 import * as _ from 'lodash';
 
-function component() {
-    const element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+// pipe
+let range: any = document.querySelector('.slider__fader');
+let sliderPipe: any = document.querySelector('.slider__pipe');
 
-    return element;
-  }
-
-  document.body.appendChild(component());
+range.onchange = function () {
+  
+  sliderPipe.style.left = this.value - 10 + 2 + 'px';
+  sliderPipe.innerHTML = this.value;
+}
